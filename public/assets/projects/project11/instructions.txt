@@ -1,0 +1,4 @@
+Liam's Portfolio - Project 11: PhishDetect
+
+Upload your project cover image to this folder as "cover.png".
+If no image is uploaded, a beautiful minimalist placeholder will be rendered dynamically.

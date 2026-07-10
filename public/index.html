@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Liam — Portfolio</title>
+  <meta name="description" content="Liam's minimalist portfolio showcasing selected work, skills, and contact information." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ══════════ NAV ══════════ -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">L.</a>
+      <ul class="nav-links">
+        <li><a href="/"        class="nav-link" data-i18n="nav.home">Home</a></li>
+        <li><a href="https://discord.com/users/1020237427945787422"        class="nav-link" data-i18n="nav.discord">Discord</a></li>
+        <li><a href="#about"   class="nav-link" data-i18n="nav.about">About</a></li>
+        <li><a href="#work"    class="nav-link" data-i18n="nav.work">Work</a></li>
+        <li><a href="#skills"  class="nav-link" data-i18n="nav.skills">Skills</a></li>
+        <li><a href="/proyect" class="nav-link" data-i18n="nav.projects">Projects</a></li>
+        <li><a href="/stats"   class="nav-link" data-i18n="nav.stats">Stats</a></li>
+        <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+      <div class="lang-switcher">
+        <button class="lang-switcher-btn" data-lang="es">ES</button>
+        <span class="lang-switcher-sep">|</span>
+        <button class="lang-switcher-btn" data-lang="en">EN</button>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="/"        class="mob-link" data-i18n="nav.home">Home</a>
+      <a href="https://discord.com/users/1020237427945787422"        class="mob-link" data-i18n="nav.discord">Discord</a>
+      <a href="#about"   class="mob-link" data-i18n="nav.about">About</a>
+      <a href="#work"    class="mob-link" data-i18n="nav.work">Work</a>
+      <a href="#skills"  class="mob-link" data-i18n="nav.skills">Skills</a>
+      <a href="/proyect" class="mob-link" data-i18n="nav.projects">Projects</a>
+      <a href="/stats"   class="mob-link" data-i18n="nav.stats">Stats</a>
+      <a href="#contact" class="mob-link" data-i18n="nav.contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- ══════════ HERO ══════════ -->
+  <section id="hero" class="hero">
+    <div class="hero-bg-text" aria-hidden="true">LIAM</div>
+    <div class="hero-content">
+      <div class="hero-tag" data-i18n="hero.tag">Available for work · 2026</div>
+      <h1 class="hero-title" data-i18n="hero.title">
+        I craft<br>
+        <em>digital</em><br>
+        experiences.
+      </h1>
+      <p class="hero-sub" data-i18n="hero.sub">Designer &amp; Developer based somewhere beautiful, building things that matter.</p>
+      <div class="hero-cta">
+        <a href="#work" class="btn btn-primary" id="heroWorkBtn" data-i18n="hero.btn.work">View Work</a>
+        <a href="#contact" class="btn btn-ghost" id="heroContactBtn" data-i18n="hero.btn.contact">Get in touch ↗</a>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator" aria-hidden="true">
+      <span class="scroll-line"></span>
+      <span class="scroll-label">Scroll</span>
+    </div>
+  </section>
+
+  <!-- ══════════ ABOUT ══════════ -->
+  <section id="about" class="about section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">01</span>
+        <h2 class="section-title" data-i18n="about.title">About</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-visual">
+          <div class="about-img-wrapper" style="overflow: hidden;">
+            <img src="/assets/me/cover.png" alt="Liam" style="width: 100%; height: 100%; object-fit: cover;" />
+          </div>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num" data-target="4">0</span>
+              <span class="stat-label" data-i18n="about.stat.years">Years exp.</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num" data-target="42">0</span>
+              <span class="stat-label" data-i18n="about.stat.projects">Projects</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num" data-target="100000">0</span>
+              <span class="stat-label" data-i18n="about.stat.clients">Clients</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-text">
+          <p class="about-lead" data-i18n="about.lead">I'm Liam — a multidisciplinary creative who bridges the gap between design and code.</p>
+          <p data-i18n="about.p1">With a background in both visual design and front-end development, I create interfaces that are as functional as they are beautiful. I believe the best digital products are those where every pixel has a purpose.</p>
+          <p data-i18n="about.p2">When I'm not pushing pixels or writing code, you'll find me exploring new cities, experimenting with film photography, or obsessing over a perfectly brewed espresso.</p>
+          <div class="about-links">
+            <a href="#" class="inline-link" id="aboutCvLink" data-i18n="about.cv">Download CV ↓</a>
+            <a href="#contact" class="inline-link" id="aboutContactLink" data-i18n="about.letswork">Let's work →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ WORK ══════════ -->
+  <section id="work" class="work section section-dark">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">02</span>
+        <h2 class="section-title" data-i18n="work.title">Selected Work</h2>
+      </div>
+      <div class="projects-list">
+
+        <article class="project-item" id="project1">
+          <div class="project-meta">
+            <span class="project-num">01</span>
+            <span class="project-year">2025</span>
+          </div>
+          <div class="project-item-img-wrapper">
+            <img src="/assets/projects/project1/cover.png" alt="XN PROTECT" class="project-item-img" style="display:none;" onload="this.style.display='block'; this.nextElementSibling.style.display='none';" />
+            <div class="project-item-placeholder">
+              <span>X</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title" data-i18n="work.p1.title">XN PROTECT — Advanced Anti-Raid Bot</h3>
+            <p class="project-desc" data-i18n="work.p1.desc">Full-featured Discord Anti-Raid bot with auto-mod, raid protection, logging, and slash commands. Serves 1M+ members across multiple servers (12k+).</p>
+            <div class="project-tags">
+              <span class="tag" data-i18n="work.p1.tag1">Discord</span>
+              <span class="tag" data-i18n="work.p1.tag2">JavaScript</span>
+              <span class="tag" data-i18n="work.p1.tag3">Node.js</span>
+            </div>
+          </div>
+          <div class="project-arrow">↗</div>
+        </article>
+
+        <article class="project-item" id="project2">
+          <div class="project-meta">
+            <span class="project-num">02</span>
+            <span class="project-year">2026</span>
+          </div>
+          <div class="project-item-img-wrapper">
+            <img src="/assets/projects/project2/cover.png" alt="XN MUSIC" class="project-item-img" style="display:none;" onload="this.style.display='block'; this.nextElementSibling.style.display='none';" />
+            <div class="project-item-placeholder">
+              <span>X</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title" data-i18n="work.p2.title">XN MUSIC — High-Fidelity Audio Bot</h3>
+            <p class="project-desc" data-i18n="work.p2.desc">Lossless audio streaming Discord bot with queue management, Spotify/SoundCloud integration, and custom equalizer built with discord.js v14.</p>
+            <div class="project-tags">
+              <span class="tag" data-i18n="work.p2.tag1">Discord</span>
+              <span class="tag" data-i18n="work.p2.tag2">JavaScript</span>
+              <span class="tag" data-i18n="work.p2.tag3">Node.js</span>
+            </div>
+          </div>
+          <div class="project-arrow">↗</div>
+        </article>
+
+        <article class="project-item" id="project3">
+          <div class="project-meta">
+            <span class="project-num">03</span>
+            <span class="project-year">2026</span>
+          </div>
+          <div class="project-item-img-wrapper">
+            <img src="/assets/projects/project3/cover.png" alt="OCEANUS XN" class="project-item-img" style="display:none;" onload="this.style.display='block'; this.nextElementSibling.style.display='none';" />
+            <div class="project-item-placeholder">
+              <span>O</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title" data-i18n="work.p3.title">OCEANUS XN — Economy & Gambling System</h3>
+            <p class="project-desc" data-i18n="work.p3.desc">Discord economy bot with currency, shop, jobs, and gambling mini-games. Redis-backed for high-performance multi-guild support.</p>
+            <div class="project-tags">
+              <span class="tag" data-i18n="work.p3.tag1">Discord</span>
+              <span class="tag" data-i18n="work.p3.tag2">JavaScript</span>
+              <span class="tag" data-i18n="work.p3.tag3">Node.js</span>
+            </div>
+          </div>
+          <div class="project-arrow">↗</div>
+        </article>
+
+        <article class="project-item" id="project4">
+          <div class="project-meta">
+            <span class="project-num">04</span>
+            <span class="project-year">2026</span>
+          </div>
+          <div class="project-item-img-wrapper">
+            <img src="/assets/projects/project4/cover.png" alt="XN TICKET" class="project-item-img" style="display:none;" onload="this.style.display='block'; this.nextElementSibling.style.display='none';" />
+            <div class="project-item-placeholder">
+              <span>X</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title" data-i18n="work.p4.title">XN TICKET — Support/Tickets Bot (Free)</h3>
+            <p class="project-desc" data-i18n="work.p4.desc">Completely free ticket bot and fully customizable to your liking.</p>
+            <div class="project-tags">
+              <span class="tag" data-i18n="work.p4.tag1">Discord</span>
+              <span class="tag" data-i18n="work.p4.tag2">JavaScript</span>
+              <span class="tag" data-i18n="work.p4.tag3">Node.js</span>
+            </div>
+          </div>
+          <div class="project-arrow">↗</div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ SKILLS ══════════ -->
+  <section id="skills" class="skills section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">03</span>
+        <h2 class="section-title" data-i18n="skills.title">Skills</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-column">
+          <h3 class="skill-col-title" data-i18n="skills.col1">Design</h3>
+          <ul class="skill-list">
+            <li class="skill-item"><span class="skill-name">UI / UX Design</span><span class="skill-bar"><span class="skill-fill" data-w="95"></span></span></li>
+            <li class="skill-item"><span class="skill-name">Brand Identity</span><span class="skill-bar"><span class="skill-fill" data-w="90"></span></span></li>
+            <li class="skill-item"><span class="skill-name">Motion Design</span><span class="skill-bar"><span class="skill-fill" data-w="75"></span></span></li>
+            <li class="skill-item"><span class="skill-name">Typography</span><span class="skill-bar"><span class="skill-fill" data-w="92"></span></span></li>
+          </ul>
+        </div>
+        <div class="skill-column">
+          <h3 class="skill-col-title" data-i18n="skills.col2">Development</h3>
+          <ul class="skill-list">
+            <li class="skill-item"><span class="skill-name">HTML / CSS</span><span class="skill-bar"><span class="skill-fill" data-w="98"></span></span></li>
+            <li class="skill-item"><span class="skill-name">JavaScript</span><span class="skill-bar"><span class="skill-fill" data-w="85"></span></span></li>
+            <li class="skill-item"><span class="skill-name">React / Next.js</span><span class="skill-bar"><span class="skill-fill" data-w="80"></span></span></li>
+            <li class="skill-item"><span class="skill-name">Swift / iOS</span><span class="skill-bar"><span class="skill-fill" data-w="65"></span></span></li>
+          </ul>
+        </div>
+        <div class="skill-column">
+          <h3 class="skill-col-title" data-i18n="skills.col3">Tools</h3>
+          <ul class="skill-list">
+            <li class="skill-item"><span class="skill-name">Figma</span><span class="skill-bar"><span class="skill-fill" data-w="97"></span></span></li>
+            <li class="skill-item"><span class="skill-name">After Effects</span><span class="skill-bar"><span class="skill-fill" data-w="78"></span></span></li>
+            <li class="skill-item"><span class="skill-name">Git / GitHub</span><span class="skill-bar"><span class="skill-fill" data-w="88"></span></span></li>
+            <li class="skill-item"><span class="skill-name">Framer</span><span class="skill-bar"><span class="skill-fill" data-w="70"></span></span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ CONTACT ══════════ -->
+  <section id="contact" class="contact section section-dark">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">04</span>
+        <h2 class="section-title" data-i18n="contact.title">Contact</h2>
+      </div>
+      <div class="contact-inner">
+        <div class="contact-left">
+          <p class="contact-headline" data-i18n="contact.headline">Let's build something great together.</p>
+          <div class="contact-socials">
+            <a href="#" class="social-link" id="socialDribbble">Dribbble ↗</a>
+            <a href="#" class="social-link" id="socialGithub">GitHub ↗</a>
+            <a href="#" class="social-link" id="socialLinkedin">LinkedIn ↗</a>
+            <a href="#" class="social-link" id="socialTwitter">Twitter ↗</a>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="nameInput" class="form-label" data-i18n="contact.form.name">Name</label>
+            <input type="text" id="nameInput" name="name" class="form-input" placeholder="Your name" data-i18n-ph="contact.form.name.ph" required />
+          </div>
+          <div class="form-group">
+            <label for="emailInput" class="form-label" data-i18n="contact.form.email">Email</label>
+            <input type="email" id="emailInput" name="email" class="form-input" placeholder="your@email.com" data-i18n-ph="contact.form.email.ph" required />
+          </div>
+          <div class="form-group">
+            <label for="messageInput" class="form-label" data-i18n="contact.form.msg">Message</label>
+            <textarea id="messageInput" name="message" class="form-input form-textarea" placeholder="Tell me about your project..." data-i18n-ph="contact.form.msg.ph" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="formSubmitBtn" data-i18n="contact.form.send">Send Message →</button>
+          <p class="form-success" id="formSuccess" data-i18n="contact.form.success">✓ Message sent! I'll be in touch soon.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ FOOTER ══════════ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-logo">Liam.</span>
+      <span class="footer-copy" data-i18n="footer.copy">© 2026 — All rights reserved</span>
+      <a href="#hero" class="footer-top" id="backToTop" data-i18n="footer.top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <!-- Cursor -->
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+  <div class="cursor-follower" id="cursorFollower" aria-hidden="true"></div>
+
+  <script src="/lang.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
