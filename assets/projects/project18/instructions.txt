@@ -1,4 +1,0 @@
-Liam's Portfolio - Project 18: RBXPwn
-
-Upload your project cover image to this folder as "cover.png".
-If no image is uploaded, a beautiful minimalist placeholder will be rendered dynamically.
