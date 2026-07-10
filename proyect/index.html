@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Liam</title>
+  <meta name="description"
+    content="All projects by Liam — Discord bots, web apps, Roblox games, hacking tools, and cybersecurity utilities." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&family=Playfair+Display:ital,wght@0,700;1,400&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="/proyect/style.css" />
+</head>
+
+<body>
+
+  <!-- ══════════ NAV ══════════ -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">L.</a>
+      <ul class="nav-links">
+        <li><a href="/"           class="nav-link" data-i18n="nav.home">Home</a></li>
+        <li><a href="https://discord.com/users/1020237427945787422"    class="nav-link" data-i18n="nav.discord">Discord</a></li>
+        <li><a href="/#about"     class="nav-link" data-i18n="nav.about">About</a></li>
+        <li><a href="/#work"      class="nav-link" data-i18n="nav.work">Work</a></li>
+        <li><a href="/#skills"    class="nav-link" data-i18n="nav.skills">Skills</a></li>
+        <li><a href="/proyect"    class="nav-link active" data-i18n="nav.projects">Projects</a></li>
+        <li><a href="/stats"      class="nav-link" data-i18n="nav.stats">Stats</a></li>
+        <li><a href="/#contact"   class="nav-link" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+      <div class="lang-switcher">
+        <button class="lang-switcher-btn" data-lang="es">ES</button>
+        <span class="lang-switcher-sep">|</span>
+        <button class="lang-switcher-btn" data-lang="en">EN</button>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="/"           class="mob-link" data-i18n="nav.home">Home</a>
+      <a href="/https://discord.com/users/1020237427945787422"    class="mob-link" data-i18n="nav.discord">Discord</a>
+      <a href="/#about"     class="mob-link" data-i18n="nav.about">About</a>
+      <a href="/#work"      class="mob-link" data-i18n="nav.work">Work</a>
+      <a href="/#skills"    class="mob-link" data-i18n="nav.skills">Skills</a>
+      <a href="/proyect"    class="mob-link" data-i18n="nav.projects">Projects</a>
+      <a href="/stats"      class="mob-link" data-i18n="nav.stats">Stats</a>
+      <a href="/#contact"   class="mob-link" data-i18n="nav.contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- ══════════ HERO ══════════ -->
+  <section class="proy-hero">
+    <div class="hero-bg-text" aria-hidden="true">WORK</div>
+    <div class="proy-hero-inner">
+      <div class="hero-tag"><span data-i18n="proy.hero.tag">All Projects</span> · <span id="projectCount">—</span> <span data-i18n="proy.hero.items">items</span></div>
+      <h1 class="hero-title" data-i18n="proy.hero.title">
+        Everything<br>
+        I've <em>built.</em>
+      </h1>
+      <p class="hero-sub" data-i18n="proy.hero.sub">From Discord bots to zero-day tools — a complete archive of what I make.</p>
+    </div>
+    <div class="hero-scroll-indicator" aria-hidden="true">
+      <span class="scroll-line"></span>
+      <span class="scroll-label" data-i18n="hero.scroll">Scroll</span>
+    </div>
+  </section>
+
+  <!-- ══════════ FILTER BAR ══════════ -->
+  <section class="filter-section">
+    <div class="container">
+
+      <!-- Category filters -->
+      <div class="filter-group">
+        <span class="filter-group-label" data-i18n="proy.filter.cat">Category</span>
+        <div class="filter-buttons" id="categoryFilters" role="group" aria-label="Filter by category">
+          <button class="filter-btn active" data-cat="all" id="catAll" data-i18n="proy.cat.all">All</button>
+          <button class="filter-btn" data-cat="discord" id="catDiscord" data-i18n="proy.cat.discord">
+            <span class="filter-icon">🤖</span> Discord
+          </button>
+          <button class="filter-btn" data-cat="webs" id="catWebs" data-i18n="proy.cat.webs">
+            <span class="filter-icon">🌐</span> Webs
+          </button>
+          <button class="filter-btn" data-cat="roblox" id="catRoblox" data-i18n="proy.cat.roblox">
+            <span class="filter-icon">🎮</span> Roblox
+          </button>
+          <button class="filter-btn" data-cat="hacking" id="catHacking" data-i18n="proy.cat.hacking">
+            <span class="filter-icon">🔓</span> Hacking
+          </button>
+          <button class="filter-btn" data-cat="cybersec" id="catCybersec" data-i18n="proy.cat.cybersec">
+            <span class="filter-icon">🛡️</span> Cybersec
+          </button>
+          <button class="filter-btn" data-cat="hosting" id="catHosting" data-i18n="proy.cat.hosting">
+            <span class="filter-icon">☁️</span> Hosting
+          </button>
+          <button class="filter-btn" data-cat="social" id="catSocial" data-i18n="proy.cat.social">
+            <span class="filter-icon">📱</span> TikTok / IG
+          </button>
+        </div>
+      </div>
+
+      <!-- Language filters -->
+      <div class="filter-group">
+        <span class="filter-group-label" data-i18n="proy.filter.lang">Language</span>
+        <div class="filter-buttons" id="langFilters" role="group" aria-label="Filter by language">
+          <button class="filter-btn active" data-lang="all" id="langAll" data-i18n="proy.lang.all">All</button>
+          <button class="filter-btn filter-btn-sm" data-lang="javascript" id="langJs">JavaScript</button>
+          <button class="filter-btn filter-btn-sm" data-lang="python" id="langPy">Python</button>
+          <button class="filter-btn filter-btn-sm" data-lang="node.js" id="langNode">Node.js</button>
+          <button class="filter-btn filter-btn-sm" data-lang="react" id="langReact">React</button>
+          <button class="filter-btn filter-btn-sm" data-lang="lua" id="langLua">Lua</button>
+          <button class="filter-btn filter-btn-sm" data-lang="html" id="langHtml">HTML</button>
+          <button class="filter-btn filter-btn-sm" data-lang="css" id="langCss">CSS</button>
+          <button class="filter-btn filter-btn-sm" data-lang="bash" id="langBash">Bash</button>
+          <button class="filter-btn filter-btn-sm" data-lang="c" id="langC">C</button>
+          <button class="filter-btn filter-btn-sm" data-lang="c++" id="langCpp">C++</button>
+        </div>
+      </div>
+
+      <!-- Active filters + count -->
+      <div class="filter-status">
+        <span class="filter-result-count" id="filterResultCount">15 projects</span>
+        <button class="filter-clear" id="clearFilters" style="display:none">Clear filters ✕</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ PROJECTS GRID ══════════ -->
+  <section class="proy-grid-section">
+    <div class="container">
+      <div class="proy-grid" id="proyGrid">
+        <!-- Cards injected by JS -->
+      </div>
+      <div class="empty-state" id="emptyState" style="display: none;">
+        <div class="empty-icon">🔍</div>
+        <p data-i18n="proy.empty">No projects found matching your criteria.</p>
+        <button class="btn btn-primary" id="clearFiltersBtn" data-i18n="proy.empty.btn">Clear Filters</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ FOOTER ══════════ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-logo">Liam.</span>
+      <span class="footer-copy" data-i18n="footer.copy">© 2026 — All rights reserved</span>
+      <a href="#" class="footer-top" id="backToTop" data-i18n="footer.top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <!-- Cursor -->
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+  <div class="cursor-follower" id="cursorFollower" aria-hidden="true"></div>
+
+  <script src="/lang.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
